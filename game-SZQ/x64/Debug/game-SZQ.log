@@ -1,0 +1,9 @@
+﻿  game.c
+  test.c
+D:\gitbash\项目\game-SZQ\test.c(17,11): warning C4013: “InitBoard”未定义；假设外部返回 int
+D:\gitbash\项目\game-SZQ\test.c(18,14): warning C4013: “DisplayBoard”未定义；假设外部返回 int
+D:\gitbash\项目\game-SZQ\test.c(22,13): warning C4013: “PlayerMove”未定义；假设外部返回 int
+D:\gitbash\项目\game-SZQ\test.c(24,14): warning C4013: “IsWin”未定义；假设外部返回 int
+D:\gitbash\项目\game-SZQ\test.c(30,15): warning C4013: “ComputerMove”未定义；假设外部返回 int
+  正在生成代码...
+  game-SZQ.vcxproj -> D:\gitbash\项目\game-SZQ\x64\Debug\game-SZQ.exe
