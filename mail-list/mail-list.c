@@ -85,7 +85,7 @@ void DelContact(struct Contact* ps)
 			ps->date[j] = ps->date[j + 1];
 		}
 		ps->size--;
-		prinft("删除成功\n");
+		printf("删除成功\n");
 	}
 
 }
@@ -136,4 +136,17 @@ void ModifyContact(struct Contact* ps)
 
 		printf("修改完成\n");
 	}
+}
+
+static int compar_age(const void* p1, const void* p2)
+{
+	struct Contact* pp1 = (struct Contact*)p1;
+	struct Contact* pp2 = (struct Contact*)p2;
+	return strcmp(pp1->date[pp1->size-1].name, pp2->date[pp2->size].name);
+}
+
+void SortContact(struct Contact* ps)
+{
+	qsort(ps, ps->size, sizeof(struct Contact), compar_age);
+	printf("排序完成\n");
 }

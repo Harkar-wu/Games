@@ -7,7 +7,8 @@
 
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
+#include <assert.h>
 
 struct PeoInfo
 {
@@ -41,14 +42,18 @@ enum Option
 
 
 
-#ifdef __MAIL-LIST_H__
-#define __MAIL-LIST_H__
 
 void InitContact(struct Contact* ps);//初始化通讯录	
+
 void AddContact(struct Contact* ps);//增加一个信息
+
 void ShowContact(const struct Contact* ps);//显示通讯录信息
+
 void DelContact(struct Contact* ps);//删除指定的联系人
+
 void SearchContact(const struct Contact* ps);//查找指定人的信息
+
 void ModifyContact(struct Contact* ps);//修改指定联系人
-#endif // DEBUG
+
+void SortContact(struct Contact* ps);//对通讯录进行排序
 

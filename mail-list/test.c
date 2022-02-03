@@ -28,22 +28,23 @@ int main()
 		scanf("%d", &input);
 		switch (input)
 		{
-		case ADD:
+		case ADD://添加
 			AddContact(&con);
 			break;
-		case DEL:
+		case DEL://删除
 			DelContact(&con);
 			break;
-		case SEARCH:
+		case SEARCH://查找
 			SearchContact(&con);
 			break;
-		case MODIFY:
+		case MODIFY://修改
 			ModifyContact(&con);
 			break;
-		case SHOW:
+		case SHOW://显示
 			ShowContact(&con);
 			break;
-		case SORT:
+		case SORT://排序
+			SortContact(&con);
 			break;
 		case EXIT:
 			printf("退出通讯录\n");

@@ -1,0 +1,74 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “scanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/gitbash/项目/mail-list/test.c"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 3,
+                  "endLine": 28,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "main",
+                  "decoratedName": "main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.30.30705.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\c1.dll -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00007FF60D530C80 -il C:\\Users\\WYD\\AppData\\Local\\Temp\\_CL_e6e7703east -typedil -f test.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1930 -D_MSC_FULL_VER=193030705 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Fox64\\Debug\\test.obj -Fdx64\\Debug\\vc143.pdb -external:W 3 -Gd -analyze:projectdirectory D:\\gitbash\\项目\\mail-list -analyze:rulesetdirectory ;D:\\vs\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\vs\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX64\\x64\\EspXEngine.dll -FC -errorreport:prompt -I D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\include -I D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -I D:\\vs\\VC\\Auxiliary\\VS\\include -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I D:\\gitbash\\项目\\mail-list\\Include\\um -external:I D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\include -I D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\include -external:I D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -I D:\\vs\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -external:I D:\\vs\\VC\\Auxiliary\\VS\\include -I D:\\vs\\VC\\Auxiliary\\VS\\include -external:I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I D:\\gitbash\\项目\\mail-list\\Include\\um -I D:\\gitbash\\项目\\mail-list\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/gitbash/项目/mail-list/test.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "521a088bbb688c6498ea30a861e5fd0f5f832316ccba74a4ca0ab74f29f58769"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gitbash/项目/mail-list/mail-list.h"
+          },
+          "hashes": {
+            "sha-256": "71d01364b86d0b72c29eea0e62e5ccf81d7569897e6e4e27769dd21b47f38ae9"
+          }
+        }
+      ]
+    }
+  ]
+}
